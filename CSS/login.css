@@ -1,0 +1,121 @@
+#form_container{
+    width: 350px;
+    position: relative;
+    margin:50px auto;
+    padding: 10px;
+    color: #333c43;
+    
+}
+#form_container>*{
+    box-sizing: border-box;
+    display: block;
+    
+}
+#form_container>form>*{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+#form_container>form{
+    margin: 20px 0;
+}
+h1>span{
+    color: #4ea819;
+}
+#form_container>form>input{
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 11px;
+    margin-bottom: 16px;
+}
+#form_container>form>input[type="submit"]{
+   background-color: #4ea819;
+   text-transform: uppercase;
+   color: white;
+   cursor: pointer;
+}
+#form_container>h1{
+    text-align: center;
+    font-size: 42px;
+}
+#form_container>a{
+    color: #333c43;
+
+    text-align: center;
+}
+#form_container>p{
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+#form_container>p>a{
+    color: #333c43;
+}
+
+#socialhandles
+{
+    border-radius: 3px;
+    border: 1px solid #666c6f;
+    padding: 24px;
+}
+#socialhandles>h3{
+    text-align: center;
+    margin-bottom: 24px;
+}
+#icons{
+    display: flex;
+    justify-content: space-between;
+}
+.socialicon{
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.socialicon>img{
+    width: 26px;
+    height: 26px;
+    
+}
+#sifb{
+    background-color: #1877f2;
+}
+#sit{
+    background-color:#1da1f2;
+}
+#sili{
+    background-color: #0a66c2;
+}
+#sig{
+    background-color:#f5f5f6;
+}
+
+.message{
+    width: 200px;
+    position: absolute;
+    background-color: #4ea819;
+    text-align: center;
+    color:  #333c43;
+    margin: auto;
+    bottom: 37%;
+    left: 20%;
+    color: white;
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.hidden{
+    opacity: 0;
+     transform: translateY(50px);
+}
+.show{
+    opacity: 1;
+}
+.red{
+    background-color: red;
+}
