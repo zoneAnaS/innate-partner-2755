@@ -5,3 +5,4 @@ for(let i=0;i<collapsable.length;i++){
         collapsable[i].classList.toggle('active');
     })
 }
+
