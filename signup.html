@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up | ManageIT</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="shortcut icon" href="images/icons8-clock-66.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/collapsable.css">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="content">
+            <div id="nav_logo"><img src="Images/logo.png"><h1>Manage<span>IT</span></h1></div>
+            <div id="nav_links">
+                    <div id="nav_menu">
+                        <a href="index.html">Demo</a>
+                        <a href="features.html">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">About us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <a href="login.html"><button class="btn1">Login</button></a>
+                    <a href="signup.html"> <button class="btn">Sign up</button></a>
+            </div>
+
+        </div>
+       
+    </div>
+
+
+    <!-- signup form  -->
+    
+    <div id="form_container">
+        <div class="message hidden">
+            <p id="messagetext">Signup Successful!</p>
+         </div>
+        <h1>Sign up here</h1>
+        <form action="#">
+            <label for="">First and Last name</label>
+            <input type="text" id="name" required placeholder="Type in your first and last name">
+            <label for="">Email</label>
+            <input type="email" id="email" required placeholder="Type your email address">
+            <label for="">Password</label>
+            <input type="password" id="password" required placeholder="Type your password">
+            <input type="submit" value="Sign in">
+        </form>
+        <p>Try free for 14 days. No credit card required.</p>
+        <p>By signing up, you agree to our <a href="#">terms</a> and <a href="#">privacy</a> policy.</p>
+        <p>Already have an account yet? <a href="login.html">Login here!</a></p>
+
+        <div id="socialhandles">
+            <h3>or connect with</h3>
+            <div id="icons">
+                <a href="#" class="socialicon" id="sifb">
+                    <img src="https://desktime.com/assets/img/bs4/icons/social/logo-facebook-white.svg">
+                </a>
+                <a href="#" class="socialicon" id="sit">
+                    <img src="https://desktime.com/assets/img/bs4/icons/social/logo-twitter-white.svg">
+                </a>
+                <a href="#" class="socialicon" id="sili">
+                    <img src="	https://desktime.com/assets/img/bs4/icons/social/logo-linkedin-white.svg">
+                </a>
+                <a href="#" class="socialicon" id="sig">
+                    <img src="https://desktime.com/assets/img/bs4/icons/social/logo-google-color.svg">
+                </a>
+                <a href="#" class="socialicon" id="sia">
+                    <img src="Images/apple_logo.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+     <!-- footer -->
+     <footer>
+        <div id="footer">
+                <div id="footer_div1">
+                    <div id="nav_logo"><img src="Images/logo.png"><h1>Manage<span>IT</span></h1></div>
+                    <div id="footer_applinks">
+                        <a href=""><img src="https://desktime.com/assets/design/dist/assets/Google-Play.svg"></a>
+                        <a href=""><img src="https://desktime.com/assets/design/dist/assets/App-Store.svg"></a>
+                    </div>
+                </div>
+                <div id="footer_div2">
+                    <div id="socialmedia_links">
+                        <a href="#"><img src="Images/facebook.png"></a>
+                        <a href="#"><img src="Images/twitter.png"></a>
+                        <a href="#"><img src="Images/youtube.png"></a>
+                        <a href="#"><img src="Images/skype.png"></a>
+                        <a href="#"><img src="Images/linkedin.png"></a>
+                        <a href="#"><img src="Images/whatsapp.png"></a>
+                    </div>
+                    <form action="#" id="footer_form">
+                        <label for="">Subscribe to our news letter</label>
+                        <input type="email" placeholder="Your work email">
+                        <input type="submit" value="SUBSCRIBE" class="btn">
+                        </form>
+                </div>
+        </div>
+    </footer>
+    <div id="footer_bottom">
+        <div id="footer_bottom_div1">
+            <p>© 2011 - 2022 DeskTime</p>
+            <a href="#"><img src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg"></a>
+        </div>
+    </div>
+    
+</body>
+<script>
+    let name=document.getElementById("name");
+    let email=document.getElementById("email");
+    let password=document.getElementById("password");
+    let form=document.querySelector("form");
+    let users=JSON.parse(localStorage.getItem("users")) || [];
+    let message=document.querySelector(".message");
+    let mtext=document.querySelector("#messagetext");
+
+    form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            let is=false;
+            users=JSON.parse(localStorage.getItem("users")) || [];
+            for(let i=0;i<users.length;i++){
+                if(users[i].email==email.value){
+                    is=true;
+                }
+            }
+
+            if(!is){
+                let obj={};
+            obj.name=name.value;
+            obj.email=email.value;
+            obj.password=password.value;
+            users.push(obj);
+            localStorage.setItem("users",JSON.stringify(users));
+            mtext.innerHTML="Signup Successful!"
+            message.classList.remove("hidden");
+            message.classList.add("show");
+            name.value="";
+            email.value="";
+            password.value="";
+            setTimeout(()=>{
+                message.classList.remove("show");
+            message.classList.add("hidden");
+            },2000)
+            }
+            else{
+                mtext.innerHTML="User Already Present"
+                message.classList.remove("hidden");
+            message.classList.add("show");
+            setTimeout(()=>{
+                message.classList.remove("show");
+            message.classList.add("hidden");
+            },2000)
+            }
+            
+    })
+</script>
+</html>

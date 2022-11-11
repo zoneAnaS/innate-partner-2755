@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login | ManageIT</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="shortcut icon" href="images/icons8-clock-66.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/collapsable.css">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="content">
+            <div id="nav_logo"><img src="Images/logo.png"><h1>Manage<span>IT</span></h1></div>
+            <div id="nav_links">
+                    <div id="nav_menu">
+                        <a href="index.html">Demo</a>
+                        <a href="features.html">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">About us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <a href="login.html"><button class="btn1">Login</button></a>
+                    <a href="signup.html"> <button class="btn">Sign up</button></a>
+            </div>
+
+        </div>
+       
+    </div>
+
+
+    <!-- login form  -->
+    <div id="form_container">
+        <div class="message hidden">
+            <p id="messagetext">Signup Successful!</p>
+         </div>
+        <h1>Log in to Manage<span>IT</span></h1>
+        <form action="index.html">
+            <label for="" >Email</label>
+            <input type="email" id="email" required placeholder="Type your email address">
+            <label for="">Password</label>
+            <input type="password" id="password" required placeholder="Type your password">
+            <input type="submit" value="Login">
+        </form>
+        <a href="#"><h3>I forgot my password</h3></a>
+        <p>Don't have an account yet? <a href="#">Sign up here!</a></p>
+
+        <div id="socialhandles">
+            <h3>or connect with</h3>
+            <div id="icons">
+                <a href="#"  class="socialicon" id="sifb">
+                    <img src="https://desktime.com/assets/img/bs4/icons/social/logo-facebook-white.svg">
+                </a>
+                <a href="#" class="socialicon" id="sit">
+                    <img src="https://desktime.com/assets/img/bs4/icons/social/logo-twitter-white.svg">
+                </a>
+                <a href="#" class="socialicon" id="sili">
+                    <img src="	https://desktime.com/assets/img/bs4/icons/social/logo-linkedin-white.svg">
+                </a>
+                <a href="#" class="socialicon" id="sig">
+                    <img src="https://desktime.com/assets/img/bs4/icons/social/logo-google-color.svg">
+                </a>
+                <a href="#" class="socialicon" id="sia">
+                    <img src="Images/apple_logo.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+     <!-- footer -->
+     <footer>
+        <div id="footer">
+                <div id="footer_div1">
+                    <div id="nav_logo"><img src="Images/logo.png"><h1>Manage<span>IT</span></h1></div>
+                    <div id="footer_applinks">
+                        <a href=""><img src="https://desktime.com/assets/design/dist/assets/Google-Play.svg"></a>
+                        <a href=""><img src="https://desktime.com/assets/design/dist/assets/App-Store.svg"></a>
+                    </div>
+                </div>
+                <div id="footer_div2">
+                    <div id="socialmedia_links">
+                        <a href="#"><img src="Images/facebook.png"></a>
+                        <a href="#"><img src="Images/twitter.png"></a>
+                        <a href="#"><img src="Images/youtube.png"></a>
+                        <a href="#"><img src="Images/skype.png"></a>
+                        <a href="#"><img src="Images/linkedin.png"></a>
+                        <a href="#"><img src="Images/whatsapp.png"></a>
+                    </div>
+                    <form action="#" id="footer_form">
+                        <label for="">Subscribe to our news letter</label>
+                        <input type="email" placeholder="Your work email">
+                        <input type="submit" value="SUBSCRIBE" class="btn">
+                        </form>
+                </div>
+        </div>
+    </footer>
+    <div id="footer_bottom">
+        <div id="footer_bottom_div1">
+            <p>© 2011 - 2022 DeskTime</p>
+            <a href="#"><img src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg"></a>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    let email=document.getElementById("email");
+    let password=document.getElementById("password");
+    let form=document.querySelector("form");
+    let users=JSON.parse(localStorage.getItem("users")) || [];
+    let message=document.querySelector(".message");
+    let mtext=document.querySelector("#messagetext");
+
+    form.addEventListener("submit",(e)=>{
+            let is=false;
+            users=JSON.parse(localStorage.getItem("users")) || [];
+            console.log(users)
+            for(let i=0;i<users.length;i++){
+                if(users[i].email==email.value && users[i].password==password.value){
+                    is=true;
+                    break
+                }
+            }
+
+            if(!is){
+                e.preventDefault();
+                mtext.innerHTML="Wrong Credentials!"
+                message.classList.remove("hidden");
+            message.classList.add("show");
+            message.classList.add("red");
+            setTimeout(()=>{
+                message.classList.remove("show");
+                message.classList.remove("red");
+            message.classList.add("hidden");
+            },2000)
+            }
+            
+    })
+</script>
+</html>
