@@ -5,10 +5,8 @@
 }
 #faq>h2{
     text-align: center;
-    font-size:36px;
     margin: auto;
     margin-bottom: 32px;
-    width: 40%;
 
 }
 .collapsable{
@@ -43,7 +41,6 @@
     transform: rotate(0deg);
 }
 .collapsable .colaphead>p{
-font-size: 18px;
 font-weight: bold;
 }
 .collapsable .colaphead>img{
@@ -51,9 +48,7 @@ font-weight: bold;
     transform: rotate(180deg);
     transition: 0.5s;
 }
-.collapsable .colapbody>p{
-    font-size: 18px;
-}
+
 
 
 
