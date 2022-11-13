@@ -116,7 +116,141 @@ body{
     background-color: #408a15;
 }
 
+#prdet{
+    background-color:#f5f5f6;
+    padding: 64px 0;
+    position: relative;
+}
+#prdet>h1,#prdet>p{
+    text-align: center;
+    margin-bottom: 16px;
+}
+#planbtn{
+    width: max-content;
+    margin: auto;
+}
+#currencybtn{
+    width: max-content;
+    margin: 10px auto 16px auto;
+}
+#currencybtn+p>span{
+    color:#4ea819;
+    font-weight: bold;
+}
+.plnbtn{
+    font-size: 18px;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+}
+.activee{
+    background-color: #475056;
+    border: 1px solid rgb(47, 47, 47);
+    color: white;
+    transition: 0.5s;
+}
+.inactive{
+    border: 1px solid rgb(203, 203, 203);
+    background-color: rgb(235, 235, 235);
+    transition: 0.5s;
+}
+.curbtn{
+    font-size: 18px;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    margin-left: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-radius: 50%;
+}
 
+/* pricing form  */
+#prdformback{
+    position: absolute;
+    top: -100px;
+    width: 100vw;
+    height: 150vh;
+    justify-content: center;
+    background-color: rgba(58, 58, 58, 0.5);
+    z-index: 10;
+}
+#comparlink{
+    color: #333C43;
+   
+}
+#comparlink>h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 16px;
+}
+#prdformpar{
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+#toppr{
+    background-color: #4ea819; 
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 30px
+}
+#toppr+div{
+    padding: 14px 30px;
+}
+#toppr+div>h1{
+    font-size: 25px;
+    margin-bottom: 14px;
+    font-weight: lighter;
+}
+#toppr>h1{
+    font-size: 20px;
+    margin: 0;
+}
+#toppr>span{
+    font-size: 30px;
+    cursor: pointer;
+}
+#prdformpar>form{
+    padding:0 30px;
+    padding-bottom: 10px;
+}
+#prdformpar>form>*{
+    display: block;
+}
+#prdformpar>form>label{
+    color: #787878;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+#formtrigger{
+    text-decoration: underline;
+    color: #4ea819;
+    font-weight: bold;
+    cursor: pointer;
+}
+.prmessage{
+    text-align: center;
+    color: red;
+    user-select: none;
+    transition: 0.3s;
+}
+.hide{
+    opacity: 0;
+    transition: 0.3s;
+}
+#prdformpar>form>input{
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+}
 
 
 /* slwf */
@@ -147,7 +281,7 @@ body{
 
 /* review */
 #review{
-    background-color:#ebecec;
+    background-color:#d7d9d9;
     padding: 64px 0;
 }
 #review>h1{
@@ -294,7 +428,80 @@ body{
 #details1_div1_grid>div>div>p{
    padding: 16px 0;
 }
-
+/* a universal platform  */
+#svgh{
+    padding: 64px 0;
+    background-color: #ebecec;
+}
+#svgh>h1{
+    text-align: center;
+    padding-bottom: 16px;
+    width: 70%;
+    margin: auto;
+}
+#svgh>p{
+    text-align: center;
+    padding-bottom: 16px;
+    width: 60%;
+    margin: auto;
+}
+.btnsvgh{
+    display: block;
+    width: fit-content;
+    margin: 16px auto;
+}
+.btnsvghcbtn{
+    background-color: #d7d7d7;
+    margin: 0 8px 24px 0;
+    font-size: 16px;
+    color: #475056;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.btnsvghcbtn:hover{
+    background-color: #bebebe;
+    
+    color: #30363a;
+}
+#btnsvgh{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.btnsvgh+p{
+    color: #6c767d;
+}
+#svghinfo{
+    width: 50%;
+}
+#svghinfop{
+    display: flex;
+    width: 80%;
+    margin:16px auto;
+    justify-content: space-between;
+}
+#svghinfop>img{
+    align-self: center;
+    width: 540px;
+    height: 370px;
+}
+#svghinfo>div{
+    margin-bottom: 20px;
+    display: flex;
+}
+#svghinfo>div>img{
+    width: 25px;
+    margin-right: 15px;
+    height: 25px;
+}
+#svghinfo>div>div>h3,#svghinfo>div>div>p{
+   margin-bottom: 16px;
+}
 /* contactus */
 #contactus{
     padding: 64px 0;
@@ -381,6 +588,75 @@ body{
     padding: 64px 0;
 }
 
+/* pricingcard  */
+#pricing{
+    padding: 64px 0;
+    background-color: rgb(228, 228, 228);
+}
+.card>ul>li>img{
+    width: 30px;
+    height: 25px;
+  }
+  .card>ul{
+    list-style: none;
+    margin-top: 16px;
+}
+.card>ul>li{
+   display: flex;
+   margin-bottom: 16px;
+}
+.cardphead{
+    font-weight: bold;
+}
+#price_grid{
+    display: flex;
+    width: 70%;
+    margin:auto;
+    justify-content: space-evenly;
+}
+.card{
+    padding: 20px;
+    width: 28%;
+    background-color: white;
+}
+.card>h4{
+    text-align: center;
+    font-weight: bold;
+}
+.card>h1{
+    text-align: center;
+    font-weight: bold;
+}
+.card>h1+p{
+    text-align: center;
+}
+.prem{
+    border:2px solid #4ea819;
+    position: relative;
+}
+.prem>button{
+    padding: 13px 32px;
+}
+.prem::before{
+    content: "Best Value";
+    position: absolute;
+    font-size: 18px;
+    padding: 10px 15px;
+    color:white;
+    top: -20px;
+    left: -20px;
+    background-color: #4ea819;
+}
+.prbtn{
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 16px;
+}
+.prbtn+p{
+    text-align: center;
+}
 /* device support section  */
 #devsup{
     color: #333C43;
@@ -444,6 +720,7 @@ margin-bottom: 16px;
     }
     .devsup_card_details>ul>li>img{
        width: 30px;
+       height: 25px;
      }
     #desktop{
         margin: 20px 0;
@@ -520,16 +797,27 @@ justify-content: space-between;
 #chatbtn{
     bottom: 30px;
     position: sticky;
-    left: 90%;
-    display: flex;
     width: fit-content;
     padding: 10px 20px;
     color: white;
+    left: 90%;
     background-color: #1b99f4 ;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.5s;
+}
+.none{
+    display: none;
+    transition: 0.5s;
+}
+.flex{
+    display: flex;
+    transition: 0.5s;
+}
+.block{
+    display: block;
 }
 #chatbtn>img{
    width: 20px;
@@ -547,11 +835,77 @@ justify-content: space-between;
 #containerchat{
     width: 100%;
     height: 300px;
+    padding:20px 20px;
     overflow-y: auto;
-    background-color: green;
+    background-color: white;
 }
+#containerchat>#bot>p:nth-child(1){
+    margin-bottom: 4px;
+    font-weight:bold;
+ }
+#containerchat>#bot>p{
+   margin-bottom: 8px;
+}
+#containerchat>#userchat{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+#containerchat>#userchat>p{
+    margin-bottom: 8px;
+    text-align: right;
+    background-color: #1b99f4 ;
+    padding: 10px 20px;
+    color: white;
+    width: fit-content;
+    border-radius: 20px;
+ }
+ #chatbox>a{
+    padding-left: 20px;
+    color: #333C43;
+    font-size: 12px;
+ }
+ #chatbox>a:hover{
+    font-weight: bold;
+    color: #1d2327;
+ }
+ .chat{
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 20px;
+ }
+
+ /* footer links  */
+ #linksfooter{
+    color: #333C43;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ #linksfooter>div{
+   margin-left: 70px;
+ }
+ .lfhead{
+    font-weight: bold;
+    margin-bottom: 16px;
+ }
+ .lflink{
+    color: #333C43;
+    text-decoration: none;
+ }
+ .lflink:hover{
+    color: #1d1e1e;
+    text-decoration: underline;
+ }
+ .lflink>p{
+    margin-bottom: 12px;
+    
+ }
+
 #chatbox>button{
-    display: block;
     margin: 12px;
     width: fit-content;
     background-color: white;
@@ -561,12 +915,13 @@ justify-content: space-between;
     cursor: pointer;
     padding: 10px 20px;
     font-size: 14px;
-
 }
 #chatbox>input{
    width: 91%;
-   display: block;
+   display: flex;
    margin: auto;
+   text-align: start;
+    padding: 10px;
    height: 100px;
    border:1px solid #9a9ea1;
 }
