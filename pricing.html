@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManageIT - Features</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="shortcut icon" href="images/icons8-clock-66.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/collapsable.css">
+</head>
+<style>
+    #nav_menu>a:nth-child(3){
+        color: #4ea819;
+    }
+    #nav_menu>a:nth-child(3):before{
+    width:100%;
+    
+ }
+</style>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="content">
+            <div id="nav_logo"><img src="Images/logo.png"><h1>Manage<span>IT</span></h1></div>
+            <div id="nav_links">
+                    <div id="nav_menu">
+                        <a href="index.html">Home</a>
+                        <a href="#">Features</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="#">About us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <a href="login.html"><button class="btn1">Login</button></a>
+                    <a href="signup.html"> <button class="btn">Sign up</button></a>
+            </div>
+
+        </div>
+       
+    </div>
+
+
+    <div id="prdet">
+        <h1>Get the best price for your team</h1>
+        <p>The industry-leading automatic time tracking and management system.
+            If you'd like to get a personalised pricing quote contact us <span id="formtrigger">here</span>.</p>
+            <div id="planbtn">
+                    <button id="monthlybtn" class="activee plnbtn">Monthly</button>
+                    <button id="annualbtn" class="inactive plnbtn">Annual</button>
+            </div>
+            <div id="currencybtn">
+                <button id="rupeebtn" class="activee curbtn">₹</button>
+                <button id="dollarbtn" class="inactive curbtn">$</button>
+                <button id="eurobtn" class="inactive curbtn">€</button>
+        </div>
+        <p><span>1 Month</span> free with annual plan</p>
+
+        <div id="prdformback" class="none">
+            <div id="prdformpar">
+                <div id="toppr"><h1>Get a quote</h1> <span>×</span></div>
+                <div>
+                    <h1>Get a custom Pricing plan!</h1>
+                    <p>Leave us your contact info and we’ll get back to you with a personalized pricing plan that works best for you and your company.</p>
+                </div>
+                <form id="prform" action="pricing.html">
+                    <label for="">What’s your email address?</label>
+                    <input type="email" id="premail" required placeholder="Enter your email address">
+
+                    <label for="">What’s your phone number?</label>
+                    <input type="text" id="prnum" required placeholder="Enter your phone number">
+
+                    <label for="">How many team members will use ManageIT?</label>
+                    <input type="number" id="prmem" required placeholder="Choose team member count">
+                    <p class="prmessage hide">Email already sent</p>
+                    <input type="submit" value="GET A QUOTE" class="btn" id="">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="pricing">
+        <div id="price_grid">
+            <div class="card">
+                <h4>Pro</h4>
+                <h1 id="pricepro">₹560.00</h1>
+                <p>user / month</p>
+                <button id="int_btn" class="btn prbtn">start free trial</button>
+                <p>No credit card required.</p>
+
+                <ul>
+                    <li><p class="cardphead">Basic Features:</p></li>
+                <li><img src="Images/check.png"><p>Automatic time tracking</p></li>
+                <li><img src="Images/check.png"><p>URL and app tracking</p></li>
+                <li><img src="Images/check.png"><p>Integrated web timer</p></li>
+                <li><img src="Images/check.png"><p>Productivity calculation</p></li>
+                <li><img src="Images/check.png"><p>Idle time tracking</p></li>
+                <li><img src="Images/check.png"><p>Project time tracking</p></li>
+                <li><img src="Images/check.png"><p>Mobile app</p></li>
+                <li><img src="Images/check.png"><p>User integrations</p></li>
+                </ul>
+            </div>
+
+
+
+            <div class="card prem">
+                <h4>Premium</h4>
+                <h1 id="pricepre">₹800.00</h1>
+                <p>user / month</p>
+                <button  class="btn prbtn">start free trial</button>
+                <p>No credit card required.</p>
+
+                <ul>
+                    <li><p class="cardphead">Pro plus:</p></li>
+                <li><img src="Images/check.png"><p>Automatic screenshots</p></li>
+                <li><img src="Images/check.png"><p>Absence calendar</p></li>
+                <li><img src="Images/check.png"><p>Shift Scheduling</p></li>
+                <li><img src="Images/check.png"><p>Booking</p></li>
+                <li><img src="Images/check.png"><p>Invoicing</p></li>
+                <li><img src="Images/check.png"><p>Company integrations</p></li>
+                <li><img src="Images/check.png"><p>Offline time approval</p></li>
+                <li><img src="Images/check.png"><p>IP restrictions</p></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Enterprise</h4>
+                <h1 id="priceent">₹1600.00</h1>
+                <p>user / month</p>
+                <button id="int_btn" class="btn prbtn">start free trial</button>
+                <p>No credit card required.</p>
+
+                <ul>
+                    <li><p class="cardphead">Premium plus:</p></li>
+                    <li><img src="Images/check.png"><p>VIP support</p></li>
+                    <li><img src="Images/check.png"><p>Personalized onboarding</p></li>
+                    <li><img src="Images/check.png"><p>Unlimited projects</p></li>
+                    <li><img src="Images/check.png"><p>Unlimited tasks</p></li>
+                    <li><img src="Images/check.png"><p>Unlimited data history</p></li>
+                    <li><img src="Images/check.png"><p>Custom API functions</p></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="ad_detail"></div>
+        <a href="#" id="comparlink"><h1>See full comparision</h1></a>
+    </div>
+
+
+
+
+
+        <!-- review section  -->
+    <div id="review">
+        <h1>More than 18 000 companies worldwide trust DeskTime with their business</h1>
+        <div id="review_grid">
+            <div>
+                <div>
+                    <img src="https://desktime.com/static/web/testimonial-images/proprofs.png">
+                    <div>
+                        <h3>Sameer Bhatia</h3>
+                        <p>Founder & CEO</p>
+                        <a href="#">ProProfs</a>
+                    </div>
+                </div>
+                <p>DeskTime has been instrumental in helping our team work better remotely. We are now able to offer a more flexible policy where team members can work on their own schedules. We have seen improvements in time management and recommend Desktime to any business looking to track time or offer a more flexible remote work policy.</p>
+            </div>
+
+            <div>
+                <div>
+                    <img src="	https://desktime.com/static/web/testimonial-images/zelma.png">
+                    <div>
+                        <h3>Zelma Diana Vidina</h3>
+                        <p>Managing Director</p>
+                        <a href="#">AD VERBUM</a>
+                    </div>
+                </div>
+                <p>DeskTime has helped us find new ways to automate our workflows to free up time for important things like strengthening relationships with our customers.</p>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://desktime.com/static/web/testimonial-images/rise-up-labs.png">
+                    <div>
+                        <h3>Ershadul Hoque</h3>
+                        <p>Founder & CEO at Riseup Labs</p>
+                        <a href="#">Riseup Labs</a>
+                    </div>
+                </div>
+                <p>We needed to figure out how and where we were squandering time because our ultimate objective was to work smarter. That's when we discovered DeskTime – a single unified solution for time tracking, project management, data analysis, and many other tasks. We started seeing the benefits of DeskTime during the Covid-19 outbreak and have been faithful to the software since.</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- faq section -->
+     <div id="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="collapsable">
+                <div class="colapcont">
+                    
+                        <div class="colaphead">
+                            <p>How much does ManageIT cost?</p>
+                            <img src="Images/up.png">
+                        </div>
+                        <div class="colapbody">
+                            <p>ManageIT is free to try for 14 days and will always stay free for individual use with the LITE plan. Pricing plans start at $7/user and can go as low as $5.50/user for larger teams, if paid annually. Find out more here.</p>
+                        </div>
+                </div>
+                
+                <div class="colapcont">
+                    <div class="colaphead">
+                        <p>How can I subscribe?</p>
+                        <img src="Images/up.png">
+                    </div>
+                    <div class="colapbody">
+                        <p>In order to start using DeskTime Pro, click on ‘Add payment method’, choose the payment type - Credit card or PayPal, enter billing details and click ‘Save payment method’. The selected payment method will be automatically charged each billing cycle. Read more here.</p>
+                    </div>
+                </div>
+                <div class="colapcont">
+                    <div class="colaphead">
+                        <p>What is the difference between monthly and annual billing?</p>
+                        <img src="Images/up.png">
+                    </div>
+                    <div class="colapbody">
+                        <p>The monthly billing plan charges your payment method on the first day of every month. The annual payment method charges once a year on the date when the plan was started, and offers a free month of subscription compared to the monthly plan. Find out more here.</p>
+                    </div>
+                </div>
+                <div class="colapcont">
+                    <div class="colaphead">
+                        <p>How can I add or remove users from my plan?</p>
+                        <img src="Images/up.png">
+                    </div>
+                    <div class="colapbody">
+                        <p>To change the amount of users in your plan, click on the “Manage members“ option under “Team members count“. From there you can select the new amount of employees you need using the slider and clicking “Update“. For a more detailed guide, read this article.</p>
+                    </div>
+                </div>    
+                
+        </div>
+    </div>
+
+
+
+
+
+
+           <!-- contactus section -->
+           <div id="contactus">
+            <div id="contactus_form">
+                <h1>Want to get the most out of your time?
+                    Try ManageIT for free!</h1>
+                <form action="#" id="contactus_form1">
+                    <input type="email" placeholder="Your work email">
+                    <input type="submit" value="START FREE TRIAL" class="btn">
+                    </form>
+                    <p>Try free for 14 days. No credit card required.</p>
+                    <p>By signing up, you agree to our <a href="#">terms</a> and <a href="#">privacy policy</a></p>    
+            </div>
+     </div>   
+     <!-- footerlinks  -->
+
+     <div id="linksfooter">
+        <div>
+            <p class="lfhead">Company</p>
+            <a href="#" class="lflink"><p>Home</p></a>
+            <a href="#" class="lflink"><p>Terms</p></a>
+            <a href="#" class="lflink"><p>Privacy</p></a>
+            <a href="#" class="lflink"><p>Cookies</p></a>
+            <a href="#" class="lflink"><p>Affiliate terms</p></a>
+            <a href="#" class="lflink"><p>Download app</p></a>
+            <a href="#" class="lflink"><p>Pricing</p></a>
+            <a href="#" class="lflink"><p>Affiliate</p></a>
+            <a href="#" class="lflink"><p>Press</p></a>
+            <a href="#" class="lflink"><p>ManageIt in your language</p></a>
+        </div>
+
+        <div>
+            <p class="lfhead">Learn more</p>
+            <a href="#" class="lflink"><p>All resources</p></a>
+            <a href="#" class="lflink"><p>Employee monitoring guide</p></a>
+            <a href="#" class="lflink"><p>Online employee time clock</p></a>
+            <a href="#" class="lflink"><p>Best time tracking apps</p></a>
+            <a href="#" class="lflink"><p>ManageIt for business</p></a>
+            <a href="#" class="lflink"><p>ManageIt for freelancers</p></a>
+            <a href="#" class="lflink"><p>FAQ</p></a>
+            <a href="#" class="lflink"><p>Case studies</p></a>
+            <a href="#" class="lflink"><p>Webinars</p></a>
+            <a href="#" class="lflink"><p>Blog</p></a>
+        </div>
+
+        <div>
+            <p class="lfhead">Integrations</p>
+            <a href="#" class="lflink"><p>All integrations</p></a>
+            <a href="#" class="lflink"><p>Trello</p></a>
+            <a href="#" class="lflink"><p>Basecamp</p></a>
+            <a href="#" class="lflink"><p>Jira</p></a>
+            <a href="#" class="lflink"><p>Asana</p></a>
+            <a href="#" class="lflink"><p>Outlook Calender</p></a>
+            <a href="#" class="lflink"><p>Google Calender</p></a>
+        </div>
+
+        <div>
+            <p class="lfhead">Features</p>
+            <a href="#" class="lflink"><p>All features</p></a>
+            <a href="#" class="lflink"><p>Automatic time tracking</p></a>
+            <a href="#" class="lflink"><p>URL and App tracking</p></a>
+            <a href="#" class="lflink"><p>Screenshots</p></a>
+            <a href="#" class="lflink"><p>Project time tracking</p></a>
+            <a href="#" class="lflink"><p>Shift Schedule</p></a>
+            <a href="#" class="lflink"><p>Offline time tracking</p></a>
+            <a href="#" class="lflink"><p>Absence Calender</p></a>
+            <a href="#" class="lflink"><p>Mobile app</p></a>
+            <a href="#" class="lflink"><p>Feature request</p></a>
+        </div>
+
+        <div>
+            <p class="lfhead">Help center</p>
+            <a href="#" class="lflink"><p>Contact us</p></a>
+            <a href="#" class="lflink"><p>Schedule a call</p></a>
+            <a href="#" class="lflink"><p>Send us an e-mail</p></a>
+            <a href="#" class="lflink"><p>Request In-person training</p></a>
+            <a href="#" class="lflink"><p>Open chat</p></a>
+            <div>
+                <p class="lfhead">Phone support</p>
+                <a href="#" class="lflink"><p>+1 (315) 6365354</p></a>
+                <a href="#" class="lflink"><p>MON-FRI 9:00-22:00 EET</p></a>
+            </div>
+        </div>
+
+        
+     </div>
+    <!-- footer -->
+    <footer>
+        <div id="footer">
+                <div id="footer_div1">
+                    <div id="nav_logo"><img src="Images/logo.png"><h1>Manage<span>IT</span></h1></div>
+                    <div id="footer_applinks">
+                        <a href=""><img src="https://desktime.com/assets/design/dist/assets/Google-Play.svg"></a>
+                        <a href=""><img src="https://desktime.com/assets/design/dist/assets/App-Store.svg"></a>
+                    </div>
+                </div>
+                <div id="footer_div2">
+                    <div id="socialmedia_links">
+                        <a href="#"><img src="Images/facebook.png"></a>
+                        <a href="#"><img src="Images/twitter.png"></a>
+                        <a href="#"><img src="Images/youtube.png"></a>
+                        <a href="#"><img src="Images/skype.png"></a>
+                        <a href="#"><img src="Images/linkedin.png"></a>
+                        <a href="#"><img src="Images/whatsapp.png"></a>
+                    </div>
+                    <form action="#" id="footer_form">
+                        <label for="">Subscribe to our news letter</label>
+                        <input type="email" placeholder="Your work email">
+                        <input type="submit" value="SUBSCRIBE" class="btn">
+                        </form>
+                </div>
+        </div>
+    </footer>
+    <div id="footer_bottom">
+        <div id="footer_bottom_div1">
+            <p>© 2011 - 2022 DeskTime</p>
+            <a href="#"><img src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg"></a>
+        </div>
+    </div>
+
+    <!-- chatbox -->
+    <div id="chatbox" class="none">
+        <div id="topchat"><h3>ManageIT</h3><span>-</span></div>
+        <div id="containerchat">
+                <div id="bot">
+                        <p>ManageIt . Bot</p>
+                        <p class="chat">Hi welcome to ManageIT</p>
+                        <p class="chat">Ask me a question</p>
+                </div>
+                <div id="userchat">
+                   
+            </div>
+        </div>
+        <button class="none">Get in touch</button>
+        <input type="text">
+        <a href="#">zendesk</a>
+    </div>    
+        <div id="chatbtn" class="none">
+            <img src="Images/questionmark.png">
+            <h3>Support</h3>
+            <!-- color #1b99f4 -->
+        </div>
+    
+    
+</body>
+<script src="script/chat.js"></script>
+<script src="script/collapse.js"></script>
+<script src="script/pricing.js"></script>
+</html>
